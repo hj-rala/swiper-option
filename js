@@ -15,3 +15,26 @@ observeParents: true //상위 요소에 대한 돌연변이도 확인해야 하�
 
 출처: https://ranidiant.tistory.com/113 [다람쥐 코드]
 
+
+
+___________________________________________________________
+같은 클래스 siper 여러개 사용
+$(".swiper-container").each(function(index, element){
+    var $this = $(this);
+    $this.addClass('instance-' + index);
+
+    var swiper = new Swiper('.instance-' + index, {
+        observer: true,
+        observeParents: true,
+        slidesPerView : 5,
+        navigation: {
+            nextEl: $('.instance-' + index).siblings('.swiper-button-next'),
+            prevEl: $('.instance-' + index).siblings('.swiper-button-prev'),
+        },
+        scrollbar: {
+            el: $('.instance-' + index).siblings('.swiper-scrollbar'),
+            hide: false,
+        },
+        watchOverflow: true
+    });
+});
