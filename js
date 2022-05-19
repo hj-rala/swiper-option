@@ -10,6 +10,9 @@ effect : 'fade', fadeEffect: { crossFade: true },  //슬라이드 fade 속성 �
 observer: true, //하위 요소를 수정(슬라이드 추가/제거 등)할 때마다 Swiper가 업데이트(재초기화)됩니다.
 observeParents: true //상위 요소에 대한 돌연변이도 확인해야 하는 경우
 
+//loop 일때 마지막 슬라이드 안보일때
+loopAdditionalSlides: 1,
+
 
 
 
