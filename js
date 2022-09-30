@@ -13,6 +13,9 @@ observeParents: true //상위 요소에 대한 돌연변이도 확인해야 하�
 //loop 일때 마지막 슬라이드 안보일때
 loopAdditionalSlides: 1,
 
+//tab or button, a 태그 있을때 포커스 앞으로 밀림
+watchSlidesProgress: true,
+
 
 
 
