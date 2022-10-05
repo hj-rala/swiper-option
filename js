@@ -16,6 +16,30 @@ loopAdditionalSlides: 1,
 //tab or button, a 태그 있을때 포커스 앞으로 밀림
 watchSlidesProgress: true,
 
+slidesPerView: 1,
+  allowTouchMove: true,
+  spaceBetween: 0,
+  autoplay: {
+    disableOnInteraction: false, //next,prev 버튼 클릭 후 auto 유지
+  },
+  loop: true,
+  effect: "fade",
+  fadeEffect: { crossFade: true },
+  speed: 1200,
+  observer: true,
+  observeParents: true,
+  watchSlidesProgress: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".smmain_banner .swiper-pagination",
+    type: "bullets",
+    bulletElement: "button",
+    clickable: true,
+  },
+
 
 
 
