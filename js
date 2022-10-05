@@ -40,7 +40,15 @@ slidesPerView: 1,
     clickable: true,
   },
 
-
+$(".smmain_banner .swiper-control").on("click", function () {
+          if ($(this).hasClass("stop")) {
+            $(this).removeClass("stop").attr("title", "슬라이드 멈춤");
+            smmainBanner.autoplay.start();
+          } else {
+            $(this).addClass("stop").attr("title", "슬라이드 재생");
+            smmainBanner.autoplay.stop();
+          }
+        });
 
 
 출처: https://ranidiant.tistory.com/113 [다람쥐 코드]
